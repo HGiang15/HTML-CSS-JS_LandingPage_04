@@ -970,7 +970,7 @@ button {
 
 /* ============== Review ============== */
 .review {
-    padding: 53px 0;
+    padding: 104px 0 52px;
 }
 
 .review__inner {
@@ -999,7 +999,13 @@ button {
     cursor: pointer;
 }
 
-.review__content {}
+.preview__control:nth-of-type(2) {
+    margin-left: auto;
+}
+
+.review__content {
+    overflow: hidden;
+}
 
 .review__list {
     display: flex;
@@ -1009,6 +1015,8 @@ button {
     display: flex;
     align-items: center;
     column-gap: 115px;
+    flex-shrink: 0;
+    width: 100%;
 }
 
 .review-item__media {
@@ -1040,7 +1048,9 @@ button {
     border-radius: inherit;
 }
 
-.review-item__content {}
+.review-item__content {
+    margin-top: 28px;   
+}
 
 .review-item__quote {
     width: 553px;
@@ -1094,3 +1104,5 @@ button {
     width: 24px;
     background: #FF5B2E;
 }
+
+/* ============== Blog ============== */
