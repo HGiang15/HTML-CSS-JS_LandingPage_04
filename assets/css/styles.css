@@ -6,6 +6,7 @@
     --primary-color: #FF5B2E;
     --white-color: #fff;
     --black-color: #000;
+    --background-color: #FFFAF5
 }
 
 html {
@@ -15,7 +16,12 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
-    background: #FFFAF5;
+    background: var(--background-color);
+}
+
+html,
+body {
+    scroll-behavior: smooth;
 }
 
 /* Common */
@@ -116,6 +122,13 @@ button {
 /* ============== Header ============== */
 .header {
     padding: 26px 0;
+    background: var(--background-color);
+}
+
+.header.fixed {
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 .header__inner {
@@ -138,7 +151,8 @@ button {
 }
 
 .navbar__link:hover,
-.header-action__link:hover {
+.header-action__link:hover,
+.navbar__link--active {
     color: #000958;
     text-shadow: 1px 0 0 currentColor;
 }
@@ -1004,11 +1018,13 @@ button {
 }
 
 .review__content {
+    position: relative;
     overflow: hidden;
 }
 
 .review__list {
     display: flex;
+    transition: transform 0.3s ease;
 }
 
 .review-item {
@@ -1016,7 +1032,9 @@ button {
     align-items: center;
     column-gap: 115px;
     flex-shrink: 0;
-    width: 100%;
+    min-width: 100%;
+    /* Mỗi item chiếm 100% chiều rộng của container */
+    box-sizing: border-box;
 }
 
 .review-item__media {

@@ -40,29 +40,29 @@
 
 <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header fixed">
         <div class="container">
             <div class="header__inner">
                 <!-- Logo -->
-                <a href="#!"><img src="./assets/img/Logo.svg" alt="Lucy" class="logo"></a>
+                <a href="./index.html"><img src="./assets/img/Logo.svg" alt="Lucy" class="logo"></a>
 
                 <!-- Navbar -->
                 <nav class="navbar">
                     <ul class="navbar__list">
                         <li class="navbar__item">
-                            <a href="#!" class="navbar__link">Home</a>
+                            <a href="#" class="navbar__link navbar__link--active">Home</a>
                         </li>
                         <li class="navbar__item">
-                            <a href="#!" class="navbar__link">About</a>
+                            <a href="#about" class="navbar__link">About</a>
                         </li>
                         <li class="navbar__item">
-                            <a href="#!" class="navbar__link">Services & Rates</a>
+                            <a href="#services" class="navbar__link">Services & Rates</a>
                         </li>
                         <li class="navbar__item">
-                            <a href="#!" class="navbar__link">Reviews</a>
+                            <a href="#reviews" class="navbar__link">Reviews</a>
                         </li>
                         <li class="navbar__item">
-                            <a href="#!" class="navbar__link">Contacts us</a>
+                            <a href="#contacts" class="navbar__link">Contacts us</a>
                         </li>
                     </ul>
                 </nav>
@@ -152,7 +152,7 @@
 
     <main>
         <!-- About -->
-        <section class="about">
+        <section id="about" class="about">
             <div class="container">
                 <div class="about__inner">
                     <!-- 1 -->
@@ -275,7 +275,7 @@
         </section>
 
         <!-- Service -->
-        <section class="service">
+        <section id="services" class="service">
             <div class="container">
                 <section class="service__top">
                     <p class="section-label">What we do for you?</p>
@@ -436,7 +436,7 @@
         </section>
 
         <!-- Pricing -->
-        <section class="pricing">
+        <section id="contacts" class="pricing">
             <div class="container pricing__container">
                 <h2 class="section-heading pricing__heading">The Best Choice</h2>
                 <p class="section-desc pricing__desc">
@@ -522,7 +522,7 @@
         </section>
 
         <!-- Review -->
-        <section class="review">
+        <section id="reviews" class="review">
             <div class="container">
                 <div class="review__inner">
                     <!-- Review previous -->
@@ -560,25 +560,23 @@
                             <!-- Review item 2 -->
                             <article class="review-item">
                                 <figure class="review-item__media">
-                                    <img src="./assets/img/review-01.png" alt="" class="review-item__img">
+                                    <img src="./assets/img/staff-02.png" alt="" class="review-item__img">
                                 </figure>
 
                                 <section class="review-item__content">
                                     <h2 class="section-heading">Our Reviews</h2>
                                     <blockquote class="review-item__quote">
                                         “It was very comforting to recieve a text and pics each day about our pets and
-                                        how they were doing. It was also nice that my pets were in the comfortable
-                                        environment of their own home and received playfull attention from our pet
                                         sitters as well. Thanks so much!”
                                     </blockquote>
-                                    <p class="review-item__author">Karla Deras</p>
+                                    <p class="review-item__author">Cristiano Ronaldo</p>
                                 </section>
                             </article>
 
                             <!-- Review item 3 -->
                             <article class="review-item">
                                 <figure class="review-item__media">
-                                    <img src="./assets/img/review-01.png" alt="" class="review-item__img">
+                                    <img src="./assets/img/staff-01.png" alt="" class="review-item__img">
                                 </figure>
 
                                 <section class="review-item__content">
@@ -589,14 +587,14 @@
                                         environment of their own home and received playfull attention from our pet
                                         sitters as well. Thanks so much!”
                                     </blockquote>
-                                    <p class="review-item__author">Karla Deras</p>
+                                    <p class="review-item__author">Leo Messi</p>
                                 </section>
                             </article>
 
                             <!-- Review item 4 -->
                             <article class="review-item">
                                 <figure class="review-item__media">
-                                    <img src="./assets/img/review-01.png" alt="" class="review-item__img">
+                                    <img src="./assets/img/staff-04.png" alt="" class="review-item__img">
                                 </figure>
 
                                 <section class="review-item__content">
@@ -607,7 +605,7 @@
                                         environment of their own home and received playfull attention from our pet
                                         sitters as well. Thanks so much!”
                                     </blockquote>
-                                    <p class="review-item__author">Karla Deras</p>
+                                    <p class="review-item__author">Klyan Mbape</p>
                                 </section>
                             </article>
 
@@ -856,6 +854,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
