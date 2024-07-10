@@ -145,8 +145,8 @@ button {
 .header-action__link {
     padding: 8px 18px;
     color: #5E6085;
-    font-size: 1.4rem;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 400;
     line-height: 1;
 }
 
@@ -197,7 +197,26 @@ button {
     max-height: 100%;
     object-fit: cover;
     border-radius: inherit;
+    animation: shaking 5s linear infinite;
 }
+
+/* @keyframes shaking {
+    0% {
+        rotate: 0;
+    }
+
+    50% {
+        rotate: 2deg;
+    }
+
+    75% {
+        rotate: -2deg;
+    }
+
+    100% {
+        rotate: 0;
+    }
+} */
 
 .hero__decor {
     position: absolute;
@@ -207,12 +226,43 @@ button {
 .hero__decor-left {
     left: -58px;
     bottom: 10px;
+    animation: spin 5s linear infinite;
 }
+
+/* 
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+} */
 
 .hero__decor-right {
     top: 16px;
     right: -43px;
+    animation: swingingY 2s ease infinite;
 }
+
+/* @keyframes swingingY {
+    50% {
+        translate: 0 -15px;
+    }
+
+    75% {
+        translate: 0 15px;
+    }
+
+    100% {
+        translate: 0;
+    }
+} */
 
 .hero__img-wrap-small {
     align-self: flex-end;
@@ -224,7 +274,7 @@ button {
 }
 
 .hero__img-small {
-    width: 182px;
+    max-width: 182px;
     height: 276px;
     object-fit: cover;
 }
@@ -648,7 +698,7 @@ button {
 .service-item__desc {
     width: 244px;
     margin-top: 18px;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1.71;
     color: #656689;
 }
@@ -1055,6 +1105,18 @@ button {
     bottom: 0;
     background: #FFDA54;
     border-radius: inherit;
+}
+
+.review-item:nth-of-type(2) .review-item__media::after {
+    background: #FF5B2E;
+}
+
+.review-item:nth-of-type(3) .review-item__media::after {
+    background: #8aed74;
+}
+
+.review-item:nth-of-type(4) .review-item__media::after {
+    background: #6ee5ee;
 }
 
 .review-item__img {

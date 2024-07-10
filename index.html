@@ -35,20 +35,30 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Sora:wght@100..800&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- PC Header -->
     <header class="header fixed">
         <div class="container">
             <div class="header__inner">
+                <!-- Tablet/Mobile menu -->
+                <label for="menu-checkbox" class="toggle-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                </label>
+
                 <!-- Logo -->
                 <a href="./index.html"><img src="./assets/img/Logo.svg" alt="Lucy" class="logo"></a>
 
                 <!-- Navbar -->
                 <nav class="navbar">
-                    <ul class="navbar__list">
+                    <ul id="pc-nav" class="navbar__list">
                         <li class="navbar__item">
                             <a href="#" class="navbar__link navbar__link--active">Home</a>
                         </li>
@@ -64,6 +74,12 @@
                         <li class="navbar__item">
                             <a href="#contacts" class="navbar__link">Contacts us</a>
                         </li>
+                        <li class="navbar__item show-on-mobile separate">
+                            <a href="./login.html" class="navbar__link">Sign in</a>
+                        </li>
+                        <li class="navbar__item show-on-mobile">
+                            <a href="./signup.html" class="navbar__link">Sign up</a>
+                        </li>
                     </ul>
                 </nav>
 
@@ -73,6 +89,23 @@
                     <a href="./signup.html" class="header-action__btn btn">Sign up</a>
                 </div>
             </div>
+        </div>
+    </header>
+
+    <!-- Tablet/mobile header -->
+    <header class="mobile-header">
+        <input type="checkbox" name="" id="menu-checkbox" class="menu-checkbox" hidden>
+
+        <!-- Overlay -->
+        <label for="menu-checkbox" class="menu-overlay"></label>
+
+        <!-- Menu content -->
+        <div class="menu-drawer">
+            <!-- Logo -->
+            <a href="./index.html"><img src="./assets/img/Logo.svg" alt="Lesson."></a>
+
+            <!-- Nav -->
+            <ul id="mobile-nav"></ul>
         </div>
     </header>
 
@@ -186,7 +219,7 @@
 
                         <!-- About img wrapper -->
                         <figure class="about__img-wrap">
-                            <img src="./assets/img/about-01.png" alt="" class="about__img">
+                            <img src="./assets/img/about-01.png" alt="" class="about__img about__img-top">
                         </figure>
 
                         <img src="./assets/img/about-decor-02.svg" alt="" class="about__media-decor">
@@ -448,8 +481,7 @@
                     <div class="pricing__switch-inner">
                         <!-- Switch -->
                         <div class="pricing__switch">
-                            <input type="checkbox" name="" id="pricing-switch" class="pricing__switch-input" checked
-                                hidden>
+                            <input type="checkbox" name="" id="pricing-switch" class="pricing__switch-input" hidden>
                             <label for="pricing-switch" class="pricing__switch-label">
                                 <span class="pricing__switch-value">Monthly</span>
                                 <span class="pricing__switch-value">Yearly</span>
