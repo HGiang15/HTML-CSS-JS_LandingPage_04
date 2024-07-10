@@ -497,17 +497,18 @@
     }
 
     .review-item__media {
-        width: 100%;
+        width: 110px;
         margin-top: 0;
     }
 
     .review-item__img {
-        width: 100%;
-        height: 200px;
+        width: 110px;
+        height: 150px;
         margin: 30px auto 0;
     }
 
-    .review-item__quote {
+    .review-item__quote,
+    .review-item__author::before {
         display: none;
     }
 
