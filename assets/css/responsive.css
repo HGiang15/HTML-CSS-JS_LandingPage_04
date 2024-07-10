@@ -491,11 +491,6 @@
     }
 
     /* Review */
-    .preview__control {
-        width: 30px;
-        height: 30px;
-    }
-
     .review-item__media {
         width: 110px;
         margin-top: 0;
