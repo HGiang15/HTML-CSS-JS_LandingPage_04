@@ -106,6 +106,10 @@
         border-top: 1.5px solid #ebebeb;
     }
 
+    .header-action {
+        margin-left: auto;
+    }
+
     /* Hero */
     .hero__inner {
         flex-direction: column-reverse;
@@ -352,13 +356,23 @@
         padding: 40px;
     }
 
+    .logo {
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
     .header-action {
         display: none;
     }
 
-    .logo {
-        top: 5%;
-        left: 54%;
+    .header__inner {
+        justify-content: space-between;
+    }
+
+    .bell {
+        display: block;
+        width: 20px;
     }
 
     /* Hero */
