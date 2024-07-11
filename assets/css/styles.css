@@ -96,6 +96,21 @@ button {
     box-shadow: 4px 3px 10px -1px rgba(191, 41, 0, 0.4);
 }
 
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.line-clamp.line-3 {
+    --line-clamp: 3;
+}
+
 .section-heading {
     font-weight: 700;
     font-size: 5.2rem;
