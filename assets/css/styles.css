@@ -901,8 +901,6 @@ button {
     margin-top: 38px;
 }
 
-.pricing__switch {}
-
 .pricing__switch-label {
     position: relative;
     display: flex;
@@ -962,10 +960,14 @@ button {
 }
 
 .pricing__list {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 44px;
     margin-top: 56px;
+}
+
+.pricing__list.pricing__list--active {
+    display: grid;
 }
 
 .pricing-item {
