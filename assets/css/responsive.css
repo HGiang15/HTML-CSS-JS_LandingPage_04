@@ -67,6 +67,16 @@
         transition: 0.6s ease;
     }
 
+    .menu-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu-drawer .x-mark svg {
+        width: 20px;
+    }
+
     .menu-drawer ul {
         margin-top: 32px;
     }
